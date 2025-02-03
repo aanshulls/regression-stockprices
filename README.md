@@ -6,11 +6,17 @@ Dataset
 The dataset (all_stocks_5yr.csv) contains the following columns:
 
 Date: The date of the stock data.
+
 Open: The opening price of the stock.
+
 High: The highest price of the stock during the day.
+
 Low: The lowest price of the stock during the day.
+
 Close: The closing price of the stock (target variable).
+
 Volume: The number of shares traded during the day.
+
 Name: The name of the company (stock ticker symbol).
 
 Data Preprocessing:

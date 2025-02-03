@@ -6,24 +6,17 @@ Dataset
 The dataset (all_stocks_5yr.csv) contains the following columns:
 
 Date: The date of the stock data.
-
 Open: The opening price of the stock.
-
 High: The highest price of the stock during the day.
-
 Low: The lowest price of the stock during the day.
-
 Close: The closing price of the stock (target variable).
-
 Volume: The number of shares traded during the day.
-
 Name: The name of the company (stock ticker symbol).
 
-Data Preprocessing
+Data Preprocessing:
 Handling Missing Values: Missing values in the open, high, and low columns were filled with their respective medians.
 
 Feature Engineering:
-
 The date column was converted into a numerical feature (days_since_first) representing the number of days since the first date in the dataset.
 
 The Name column (categorical) was dropped as it was not relevant for regression.
@@ -39,14 +32,11 @@ Train-Test Split: The data was split into training and testing sets (75% trainin
 
 Evaluation Metric: The model was evaluated using the R² score, which measures the proportion of variance in the target variable that is predictable from the features.
 
-Results
+Results:
 The model achieved an R² score of 0.9998, indicating an extremely high level of accuracy in predicting stock closing prices. This suggests that the features used (open, high, low, volume, and days_since_first) are highly predictive of the closing price.
 
-Libraries Used
+Libraries Used:
 Pandas: For data manipulation and analysis.
-
 NumPy: For numerical computations.
-
 Seaborn and Matplotlib: For data visualization.
-
 Scikit-learn: For model building and evaluation.
